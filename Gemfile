@@ -4,6 +4,10 @@ gem 'rails', '3.2.5'
 
 gem 'pg', '0.12.2'
 
+#boot
+gem 'rails', '3.2.5'
+gem 'bootstrap-sass', '2.0.0'
+
 group :development, :test do
   gem 'rspec-rails', '2.10.0'
   gem 'guard-rspec', '0.5.5'
