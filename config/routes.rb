@@ -1,5 +1,6 @@
 Railstutorial::Application.routes.draw do
-  get "users/new"
+  #get "users/new" => para resources
+  resources :users
 
   #get "static_pages/home" <- convert to named route wirh MATCH
   #get "static_pages/help"

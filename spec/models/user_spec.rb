@@ -20,7 +20,7 @@ describe User do
 
   subject { @user }
   
-  let(:found_user) { User.find_by_email(@user.email) }
+  let(:found_user) { User.find_by_email(@user.email)?:found_user:@user }
 
   it { should respond_to(:name) }
   it { should respond_to(:email) }
