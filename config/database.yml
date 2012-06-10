@@ -19,8 +19,8 @@ development:
 test:
     adapter: postgresql
     database: railstut_test
-    username: railstut
-    password: railstut
+    username: postgres
+    password: postgres
     host: localhost
     encoding: UTF8
     pool: 5
@@ -28,6 +28,7 @@ test:
 
 production:
     adapter: postgresql
+    prepared_statements: false
     database: railstut_prod
     username: postgres
     password: 

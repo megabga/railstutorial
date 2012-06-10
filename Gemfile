@@ -4,9 +4,13 @@ gem 'rails', '3.2.5'
 
 gem 'pg', '0.12.2'
 
-#boot
+# Bootstrap
 gem 'rails', '3.2.5'
 gem 'bootstrap-sass', '2.0.0'
+
+group :development do
+	gem 'annotate', '~> 2.4.1.beta'
+end
 
 group :development, :test do
   gem 'rspec-rails', '2.10.0'
