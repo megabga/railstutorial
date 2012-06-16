@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
   before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
   
+  attr_accessible :name, :email, :password, :password_confirmation
+  
   #BASICS
   VALID_NAME_REGEX = /\A\w+.*\s.*\z/i
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
