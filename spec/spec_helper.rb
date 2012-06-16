@@ -108,4 +108,9 @@ RSpec.configure do |config|
   # automatically. This will be the default behavior in future versions of
   # rspec-rails.
   config.infer_base_class_for_anonymous_controllers = false
+  
+  config.before(:each) do
+      full_example_description = "Starting #{self.class.description} #{@method_name}"
+      Rails.logger.info("\n\n#{full_example_description}\n#{'-' * (full_example_description.length)}")      
+  end
 end
